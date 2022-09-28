@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon [routerLink]="['']" name="arrow-back-outline"></ion-icon>
+    <ion-title>formulario-club</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+        <ion-label>Nombre del Club</ion-label>
+        <ion-input type="text" [value]="Club.nombre_club" (input)="nclub($event)"></ion-input>
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+        <ion-label>Descripcion del Club</ion-label>
+        <ion-input type="text" [value]="Club.descripcion_club" (input)="dclub($event)"></ion-input>
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+        <ion-label>Dias de entrenamiento</ion-label>
+        <ion-select [value]="Club.dias_entrenamiento" (change)="diclub($event)">
+          <ion-select-option *ngFor="let temporal of Dias"[value]="temporal" >
+            {{temporal}}
+          </ion-select-option>
+        </ion-select>
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+        <ion-button type="button" (click)="guardarclub()">Guardar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

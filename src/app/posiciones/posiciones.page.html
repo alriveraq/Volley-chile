@@ -1,0 +1,158 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon [routerLink]="['']" name="arrow-back-outline"></ion-icon>
+    <ion-title>
+      Posiciones
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" (click)="setOpenpun(true)">Punta</ion-button>
+        <ion-modal [isOpen]="isModalOpenpun">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>Posicion Punta</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpenpun(false)">Cerrar</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-title>Punta</ion-card-title>
+                  <img src="https://pardtrekskonocimiento.com/wp-content/uploads/2020/10/VOLEIBOL-POSICIONES-PARDTREKSKONOCIMIENTO-01-1024x723.jpg" alt="">
+                </ion-card-header>
+
+                <ion-card-content>
+                  El jugador punta se ubica en la posicion 4 cuando es delantero y 6 cuando es zaguero
+                </ion-card-content>
+              </ion-card>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+
+    </ion-row>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" (click)="setOpencen(true)">Central</ion-button>
+        <ion-modal [isOpen]="isModalOpencen">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>Posicion Central</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpencen(false)">Cerrar</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-title>Central</ion-card-title>
+                  <img src="https://pardtrekskonocimiento.com/wp-content/uploads/2020/10/VOLEIBOL-POSICIONES-PARDTREKSKONOCIMIENTO-03-1024x723.jpg" alt="">
+                </ion-card-header>
+
+                <ion-card-content>
+                  El jugador central se ubica en la posicion 3 cuando es delantero y  cuando es zaguero
+                </ion-card-content>
+              </ion-card>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" (click)="setOpencop(true)">Opuesto</ion-button>
+        <ion-modal [isOpen]="isModalOpenop">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>Posicion Opuesto</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpencop(false)">Cerrar</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-title>Opuesto</ion-card-title>
+                  <img src="https://pardtrekskonocimiento.com/wp-content/uploads/2020/10/VOLEIBOL-POSICIONES-PARDTREKSKONOCIMIENTO-02-1024x723.jpg" alt="">
+                </ion-card-header>
+
+                <ion-card-content>
+                  El jugador punta se ubica en la posicion 4 cuando es delantero y 6 cuando es zaguero
+                </ion-card-content>
+              </ion-card>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+
+    </ion-row>
+    <ion-row>
+      <ion-col>
+
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" (click)="setOpenar(true)">Armador</ion-button>
+        <ion-modal [isOpen]="isModalOpenar">
+          <ng-template>
+            <ion-header>
+              <ion-toolbar>
+                <ion-title>Posicion Armador</ion-title>
+                <ion-buttons slot="end">
+                  <ion-button (click)="setOpenar(false)">Cerrar</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+            </ion-header>
+            <ion-content class="ion-padding">
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-title>Armador</ion-card-title>
+                  <img src="https://pardtrekskonocimiento.com/wp-content/uploads/2020/10/VOLEIBOL-POSICIONES-PARDTREKSKONOCIMIENTO-04-1024x723.jpg" alt="">
+                </ion-card-header>
+
+                <ion-card-content>
+                  El jugador armador se ubica en la posicion 2
+                </ion-card-content>
+              </ion-card>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

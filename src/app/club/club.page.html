@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>club</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title [id]="Club.nombre_club">{{Club.nombre_club}}</ion-card-title>
+    </ion-card-header>
+    {{Club.descripcion_club}}
+    <ion-card-content >
+      {{Club.dias_entrenamiento}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
